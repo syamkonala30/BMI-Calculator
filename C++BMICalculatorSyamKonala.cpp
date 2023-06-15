@@ -1,3 +1,5 @@
+#include <iostream>
+
 using namespace std;
 float CalculateBMI(float h, float w) {
     float SqrtOfHeight = h * h;
@@ -14,16 +16,16 @@ int main() {
     float BMI = CalculateBMI(height, weight);
     cout << "your BMI is " << BMI << "\n";
     if (BMI < 18.5) {
-        cout << "you are underweight";
+        cout << "You are considered underweight";
     }
-    else if (BMI > 18.5 & BMI < 24.9) {
-        cout << "You are normal";
+    else if (BMI > 18.5 & BMI <= 25) {
+        cout << "You are in the normal BMI range";
     }
     else if (BMI > 25 & BMI < 30) {
-        cout << "You are overweight";
+        cout << "You are considered overweight";
     }
     else if (BMI > 30) {
-        cout << "You are obese";
+        cout << "You are considered obese";
     }
     return 0;
 }
