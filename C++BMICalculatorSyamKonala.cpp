@@ -9,12 +9,12 @@ float CalculateBMI(float h, float w) {
 int main() {
     float height;
     float weight;
-    cout << "Please enter your height in meters:>>";
+    cout << "Please enter your height in meters: ";
     cin >> height;
-    cout << "please enter your weight in kg:>>";
+    cout << "please enter your weight in kg: ";
     cin >> weight;
     float BMI = CalculateBMI(height, weight);
-    cout << "your BMI is " << BMI << "\n";
+    cout << "Your BMI is " << BMI << "\n";
     if (BMI < 18.5) {
         cout << "You are considered underweight";
     }
